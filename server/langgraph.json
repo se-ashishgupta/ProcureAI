@@ -1,0 +1,9 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "procurement_rfp_agent": "agent.rfp.graph:graph",
+    "proposal_analysis_agent": "agent.proposal.graph:graph",
+    "proposal_chat_agent": "agent.proposal_chat.graph:graph"
+  },
+  "env": ".env"
+}
