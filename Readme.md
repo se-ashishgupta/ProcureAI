@@ -1,8 +1,23 @@
-# ProcureAI — Setup Guide (New Laptop)
+# ProcureAI
+
+**ProcureAI** turns plain procurement requirements into structured RFPs, scores vendor proposals, and helps you award — with an AI assistant in the loop.
+
+### What it does
+
+1. **Intake** — Describe what you need in plain language (budget, timeline, constraints).
+2. **RFP generation** — Pick an organization template; the AI drafts a full RFP section by section.
+3. **Vendor evaluation** — Upload or use demo proposals; the AI scores vendors against your RFP.
+4. **Award** — Review scores and move to a procurement decision.
+
+Built for procurement managers who want less manual drafting and a clearer path from requirement → RFP → vendor shortlist.
+
+---
+
+# Setup Guide (New Laptop)
 
 This guide helps you run **ProcureAI** on a brand-new computer, even if you are not a developer.
 
-ProcureAI is a procurement app with an AI assistant. It has two parts that must run at the same time:
+The app has two parts that must run at the same time:
 
 | Part | What it does | Folder |
 |------|----------------|--------|
