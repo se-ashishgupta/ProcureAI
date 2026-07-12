@@ -11,7 +11,7 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ReduxProvider>
       <AbilityProvider>
-        <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem storageKey="vite-ui-theme" disableTransitionOnChange>
           <App />
           <Toaster richColors position="top-right" />
         </ThemeProvider>

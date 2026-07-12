@@ -2,6 +2,7 @@ import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { LogOut, LayoutDashboard, FileText, Users, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { Can } from "@casl/react";
 import { logout } from "@/features/auth/authSlice";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
@@ -74,17 +75,20 @@ export function AppShell() {
             <p className="font-medium">{user?.name}</p>
             <p className="text-muted-foreground capitalize">{user?.role.replace("_", " ")}</p>
           </div>
-          <Button
-            variant="outline"
-            className="w-full"
-            onClick={() => {
-              dispatch(logout());
-              navigate("/login");
-            }}
-          >
-            <LogOut className="size-4" />
-            Sign out
-          </Button>
+          <div className="flex items-center w-full  gap-2 justify-between">
+            <ThemeToggle className="shrink-0" align="start" />
+            <Button
+              variant="outline"
+              className="flex-1"
+              onClick={() => {
+                dispatch(logout());
+                navigate("/login");
+              }}
+            >
+              <LogOut className="size-4" />
+              Sign out
+            </Button>
+          </div>
         </div>
       </aside>
       <main className="flex min-h-0 flex-1 flex-col overflow-hidden">
